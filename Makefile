@@ -9,4 +9,4 @@ LISPFLAGS=--quit --non-interactive
 tests:
 	ENV=$(ENV) \
 	$(LISP) \
-	$(LISPFLAGS) --load tests-runner.lisp
+	$(LISPFLAGS) --load test-runner.lisp

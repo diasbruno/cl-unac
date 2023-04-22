@@ -1,5 +1,9 @@
 (push *default-pathname-defaults* ql:*local-project-directories*)
 
+(quicklisp:quickload :cl-unac.config)
+
+(cl-unac.config:load-from-custom-path "/usr/lib/x86_64-linux-gnu/libunac")
+
 (quicklisp:quickload :cl-unac.tests)
 
 (setq fiveam:*on-error* :debug)
